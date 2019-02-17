@@ -1,0 +1,61 @@
+========= Proj Test =========
+Expected:(1,1) Actual:(1.0, 1.0)
+========= Delta Test =========
+Test1: 0.00 (Expect: 0.0)
+Test2: -4.00 (Expect: -4.0)
+========= Disjoin Test =========
+Test1: true (Expect: True)
+Test2: false (Expect: False)
+Test3: true (Expect: True)
+Test4: true (Expect: True)
+Test5: false (Expect: False)
+Test6: false (Expect: False)
+========= Polygon Test =========
+--------- 1 ---------
+vertex: 5
+isSimple: false
+isConvex: false
+--------- 2 ---------
+vertex: 7
+isSimple: true
+isConvex: true
+area: 227.00
+--------- 3 ---------
+vertex: 9
+isSimple: false
+isConvex: false
+--------- 4 ---------
+vertex: 13
+isSimple: false
+isConvex: true
+--------- 5 ---------
+vertex: 13
+isSimple: true
+isConvex: false
+area: 82.00
+--------- 6 ---------
+vertex: 22
+isSimple: true
+isConvex: false
+area: 50.00
+--------- 7 ---------
+vertex: 4
+isSimple: true
+isConvex: true
+area: 25.00
+========= Contains Test =========
+Should be True, True, False, False
+--------- 1 ---------
+Cannot test contain for non simple poly
+--------- 2 ---------
+Contains: true
+--------- 3 ---------
+Cannot test contain for non simple poly
+--------- 4 ---------
+Cannot test contain for non simple poly
+--------- 5 ---------
+Contains: true
+--------- 6 ---------
+Contains: false
+--------- 7 ---------
+Contains: false
